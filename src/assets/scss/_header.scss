@@ -16,16 +16,17 @@
     background-color: transparent;
     padding: var(--bs-navbar-padding-y) 0;
     --bs-navbar-padding-y: 30px;
+    @include lg {
+        --bs-navbar-padding-y: 0;
+    }
     @include md {
-        --bs-navbar-padding-y: 24px;
+        --bs-navbar-padding-y: 0;
     }
     @include sm {
-        --bs-navbar-padding-y: 20px;
+        --bs-navbar-padding-y: 0;
     }
     &.position-fixed {
         animation: headerAnimation .5s linear;
-        background-color: rgba($color: #070913, $alpha: .95);
-        border-bottom: 1px solid rgba($color: $heading, $alpha: .3);
         --bs-navbar-padding-y: 24px;
         @include md {
             --bs-navbar-padding-y: 20px;
@@ -43,7 +44,7 @@
             height: 100vh;
             background-color: rgba($color: #070913, $alpha: .95);
             padding: 24px 16px;
-            transform: translateY(100%);
+            transform: translateY(200%);
             @include transition;
             &.show-menu {
                 transform: translate(0, 0);
@@ -57,7 +58,7 @@
             height: 100vh;
             background-color: rgba($color: #070913, $alpha: .95);
             padding: 24px 16px;
-            transform: translateY(100%);
+            transform: translateY(200%);
             @include transition;
             &.show-menu {
                 transform: translate(0, 0);
@@ -129,6 +130,12 @@
         border: 1px solid rgba(152, 190, 255, 0.12);
         background: rgba(152, 190, 255, 0.06);
         backdrop-filter: blur(17px);
+        @include lg{
+            border-radius: 0;
+        }
+        @include mmd{
+            border-radius: 0;
+        }
     }
   
     &-toggler {
@@ -140,14 +147,14 @@
         align-items: center;
         justify-content: center;
         & svg {
-            --width: 60px;
+            --width: 40px;
             width: var(--width);
             height: var(--width);
             @include sm {
-                --width: 50px;
+                --width: 40px;
             }
             @include ssm {
-                --width: 45px;
+                --width: 35px;
             }
         }
     }
@@ -158,6 +165,12 @@ button:focus {
 .logo{
     img {
         width: 379px;
+        @include lg{
+            width: 340px;
+        }
+        @include mmd{
+            width: 220px;
+        }
         @include sm{
             width: 180px;
         }
@@ -165,11 +178,11 @@ button:focus {
 }
 .boxed-btn{
     margin-left: 10px;
+    padding: 12px 24px;
+    padding-top: 15.5px;
     @include mmd{
         margin-left: 0;
-        margin-right: 10px;
         margin-top: 10px;
-        margin-bottom: 20px;
     }
 }
 }

@@ -1,0 +1,42 @@
+.hunter{
+    position: relative;
+    z-index: 1;
+    &-content{
+        max-width:900px;
+        margin-inline: auto;
+        h2{
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            @include font-145;
+            font-family: "Druk Trial";
+            .hunterHeading{
+                color: #FB3737;
+            }
+            .vs{
+                color: $white;
+                font-family: "Druk Text Wide Trial";
+                @include font-75;
+                font-weight: 700;
+                line-height: 130%;
+                text-transform: uppercase;
+            }
+        }
+        .subtitle{
+            color: rgba(255, 255, 255, 0.90);
+            font-family: "Poppins", sans-serif;
+            @include font-20;
+            font-weight: 500;
+            line-height: 150%;
+            margin-bottom: 20px;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.90);
+            @include font-18;
+            font-style: normal;
+            line-height: 150%;
+        }
+        .boxed-btn{
+            margin-top: 40px;
+        }
+    }
+}

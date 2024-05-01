@@ -1,113 +1,60 @@
 .about{
-    padding-top: 200px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 180px;
+    position: relative;
+    z-index: 1;
     @include mmd{
-        padding-top: 100px;
-        padding-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 160px;
     }
     @include sm{
-        padding-top: 80px;
-        padding-bottom: 60px;
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -15%;
+        width: 100%;
+        height: 120%;
+        background-image: url('../img/aboutboubleShap.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: -1;
     }
     .aboutLeft {
         position: relative;
         z-index: 1;
-        padding: 70px;
-        max-width: 465px;
-        margin-inline: auto;
-        @include mmd {
-            max-width: 365px;
-            padding: 60px;
-        }
-         .ecoshap {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 150%;
-            max-width: 150%;
-            height: 150%;
-            transform: translate(-50%, -50%);
-            z-index: -2;
-        }
-        .aboutLeftImgShap {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 100%;
-            height: 100%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            animation: rotated 15s linear infinite;
+        img{
+            width: 120%;
+            margin-left: -12%;
+            @include mmd{
+                width: 100%;
+                margin-left: 0;
+            }
         }
     }
     &-content{
-        padding-left: 10%;
         position: relative;
         z-index: 9;
+        margin-left: -20px;
         @include mmd{
             text-align: center;
             margin-top: 60px;
-            padding-left: 0;
-        }
-        .subtitle{
-            color: $caption;
-            @include font-18;
-            font-weight: 500;
-            line-height: 150%;
-            letter-spacing: 0.9px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            display: inline-block;
+            padding-left: 20px;
         }
         h2{
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         p{
-            max-width: 480px;
-            @include font-18;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 160%;
-            strong{
-                font-weight: 500;
-            }
-            margin-bottom: 25px;
-            @include mmd{
-                margin-inline: auto;
-            }
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.80);
         }
-        li{
-            color: $heading;
-            font-family: "Rubik", sans-serif;
-            @include font-20;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 140%;
-            opacity: 0.8;
-            margin-bottom: 12px;
-            svg{
-                margin-right: 8px;
-                display: inline-block;
-                max-width: 20px;
-            }
-        }
+        
         .boxed-btn{
-            margin-top: 20px;
-            margin-right: 15px;
-            padding: 24px 40px;
-            @include font-20;
-            border-radius: 20px;
-            font-weight: 500;
+            margin-top: 35px;
         }
-    }
-}
-
-
-@keyframes rotated {
-    0% {
-        transform: translate(-50%, -50%) rotate(0);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
     }
 }

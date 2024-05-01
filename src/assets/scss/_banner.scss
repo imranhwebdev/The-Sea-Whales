@@ -1,6 +1,9 @@
 .banner{
-    padding-top: 230px;
+    position: relative;
+    z-index: 1;
+    padding-top: 310px;
     padding-bottom: 130px;
+    overflow: hidden;
     @include mmd{
         padding-top: 180px;
         padding-bottom: 90px;
@@ -9,80 +12,43 @@
         padding-top: 150px;
         padding-bottom: 70px;
     }
-    .heroShap{
+    &::before{
         position: absolute;
+        content: "";
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 74.95%, #070913 98.56%), linear-gradient(180deg, rgba(0, 0, 0, 0.98) -23.01%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.30) 21.48%, rgba(0, 0, 0, 0.00) 100%);
     }
-    .heroBlurColorShap1{
+    .herobg img, .heroshap{
         position: absolute;
-        left: 20%;
-        top: 0%;
-        width: 159px;
-        height: 128px;
-        z-index: -1;
-        border-radius: 557px;
-        background: #272CA4;
-        filter: blur(177px);
-        @include sm{
-            width: 80px;
-            height: 80px;
-            filter: blur(180px);
-        }
-
-    }
-    .heroBlurColorShap2{
-        position: absolute;
-        left: 50%;
+        left: 0%;
         top: 0;
-        width: 557px;
-        height: 145px;
-        z-index: -1;
-        border-radius: 557px;
-        background: #37BCE6;
-        filter: blur(212px);
-        transform: translateX(-50%);
-        @include sm{
-            width: 300px;
-            height: 100px;
-        }
+        width: 100%;
+        height: 100%;
+        z-index: -2;
 
     }
-    .heroBlurColorShap3{
-        position: absolute;
-        right: 15%;
-        top: 20%;
-        width: 159px;
-        height: 128px;
+    .heroshap{
         z-index: -1;
-        border-radius: 557px;
-        background: #42DD28;
-        filter: blur(160px);
-        @include sm{
-            width: 80px;
-            height: 80px;
-            filter: blur(180px);
-        }
 
     }
     &-content{
-        .subtitle{
-            img{
-                max-width: 24px;
-            }
-            display: inline-block;
-            color: $caption;
-            @include font-20;
-            text-transform: uppercase;
-            margin-bottom: 16px;
-        }
         h1{
             color: $heading;
+            font-style: normal;
+            text-transform: uppercase;
             span{
+                font-family: 'Druk Trial', sans-serif;
                 color: $primary;
+                text-align: center;
+                text-shadow: 0px 4px 50.1px rgba(0, 0, 0, 0.25);
+                @include font-180;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 198px */
             }
             margin-bottom: 25px;
         }
