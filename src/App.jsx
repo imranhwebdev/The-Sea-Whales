@@ -8,9 +8,9 @@ import Toknomics from './components/Toknomics'
 import MarqueeTwo from './components/MarqueeTwo'
 import Team from './components/Team'
 import Faq from './components/Faq'
-// import Services from './components/Services'
+import Cta from './components/Cta'
 // import Roadmap from './components/Roadmap'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -25,9 +25,10 @@ function App() {
       <MarqueeTwo />
       <Team />
       <Faq />
-      {/* <Services />
-      <Roadmap />
-      <Footer /> */}
+      <Cta />
+      <MarqueeTwo />
+      {/* <Roadmap /> */}
+      <Footer />
     </>
   )
 }

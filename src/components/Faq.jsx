@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
+import faqBubleShap from '../assets/img/faqBubleShap.png';
 import Accordion from 'react-bootstrap/Accordion';
 export default function Faq(){
     const accordionData = [
@@ -45,6 +46,9 @@ export default function Faq(){
     const SectionTitle = "FAQs";
     return(
         <div className="faq__area" id='faq'>
+            <figure className='faqBubleShap'>
+                <img src={faqBubleShap} alt="" />
+            </figure>
             <Container>
                 <Row>
                     <Col>
