@@ -41,21 +41,9 @@ export default function Services(){
             desc: "Gas Fee Abstraction removes the complexity of paying fees across multiple chains. No need for users to hold L1 or L2 native tokens to use the dApp."
         },
     ];
-    const arrowR = <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-    <path d="M6.29834 16.1667L14.6317 7.83334" stroke="#F8F6FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M6.29834 7.83334H14.6317V16.1667" stroke="#F8F6FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>;
     return(
         <div className="services">
             <Container>
-                <Row className='justify-content-center'>
-                    <Col lg={7}>
-                        <div className="section-title text-center">
-                            <h2>Core <span>Features</span></h2>
-                            <p>At Layer 2b, we pride ourselves on offering a suite of core features designed to elevate your experience in the decentralized landscape.</p>
-                        </div>
-                    </Col>
-                </Row>
                 <Row className='services-wrapper'>
                     {servicesContent.map((item, index)=>(
                     <Col lg={4} md={6} className='services-single-item' key={index}>
@@ -69,15 +57,7 @@ export default function Services(){
                             <p>{item.desc}</p>
                         </div>
                     </Col>
-
                     ))}
-                </Row>
-                <Row>
-                    <Col>
-                        <div className="read-more text-center">
-                            <a href="#" className='boxed-btn'>Read more {arrowR}</a>
-                        </div>
-                    </Col>
                 </Row>
             </Container>
         </div>

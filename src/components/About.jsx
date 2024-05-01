@@ -32,7 +32,7 @@ export default function About(){
                                 <h2><span>Revenge</span> Of The Sei Whales.</h2>
                             </div>
                             {aboutDesc.map((item, index)=>(
-                                <p>{item.desc}</p>
+                                <p key={index}>{item.desc}</p>
                             ))}
                             <a href="#" className='boxed-btn'>FIND OUT MORE</a>
                         </div>

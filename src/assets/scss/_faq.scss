@@ -1,0 +1,136 @@
+.faq__area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+    @include lg {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    @include mmd {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    @include sm {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .container{
+        max-width: 1294px;
+        margin-inline: auto;
+    }
+    & .section__title {
+        margin-bottom: 66px;
+        @include sm{
+            margin-bottom: 30px;
+        }
+        h2{
+            color: $white;
+            font-family: "Druk Text Wide Trial";
+            @include font-75;
+            font-weight: 700;
+            line-height: 130%; 
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    & .accordion-item {
+        margin-bottom: 35px;
+        position: relative;
+        border-radius: 8px;
+        border: 1px solid rgba(212, 227, 255, 0.04);
+        background: rgba(212, 227, 255, 0.02);
+        backdrop-filter: blur(47px);
+        @include sm{
+            margin-bottom: 20px;
+        }
+        & .accordion-header{
+            padding:0px 24px;
+            font-weight: 800;
+            // @include font-26;
+            font-family: "Druk Text Wide Trial";
+        }
+        & .active.accordion-header{
+            border-radius: 10px 10px 0px 0px;
+            display: block;
+            color: #030607;
+        }
+        & .accordion-button {
+            font-weight: 500;
+            @include font-20;
+            font-family: "Druk Text Wide Trial";
+            text-transform: uppercase;
+            padding:30px 0;
+            background: transparent;
+            line-height: 120%;
+            letter-spacing: 1.3px;
+            color: $white;
+            @include sm{
+                font-size: 18px;
+                padding:25px 0;
+                padding-right: 30px;
+            }
+        }
+        & .accordion-body {
+            padding: 14px 110px 14px 24px;
+            @include font-20;
+            line-height: 180%;
+            display: block;
+            color: rgba(255, 255, 255, 0.70);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: normal;
+            @include sm{
+                padding: 20px;
+                font-size: 15px;
+            }
+        }
+        & .accordion-collapse.collapse.show {
+            border-top: 1px solid $black;
+        }
+    }
+    & .accordion {
+        --bs-accordion-border-color: transparent;
+        --bs-accordion-btn-focus-border-color: transparent;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem transparent;
+        --bs-accordion-inner-border-radius: 10px - 10px;
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('../img/arrow-down-right.svg');
+        background-size: 40px;
+        background-repeat: no-repeat;
+        @include transition;
+        position: absolute;
+        content: "";
+        right: -5px;
+        width: 55.72px;
+        height: 55.72px;
+        --bs-accordion-btn-icon-transform: rotate(0deg);
+        transform: var(--bs-accordion-btn-icon-transform);
+        @include sm{
+            right: -15px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .accordion-button::after {
+        background-image: url('../img/arrow-up-right.svg');
+        background-position: center center;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        @include transition;
+        position: absolute;
+        content: "";
+        right: -5px;
+        width: 55.72px;
+        height: 55.72px;
+        @include sm{
+            right: -15px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+}

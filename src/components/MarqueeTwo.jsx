@@ -1,7 +1,7 @@
 import React from 'react'
-import brandLogo from '../assets/img/brandLogo1.png';
+import brandLogo from '../assets/img/brandlogo2.png';
 import Marquee from "react-fast-marquee";
-export default function MarqueeOne() {
+export default function MarqueeTwo() {
     const marqueeImgs = [
         {
             image: brandLogo,
