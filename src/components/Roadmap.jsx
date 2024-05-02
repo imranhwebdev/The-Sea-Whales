@@ -1,8 +1,14 @@
-import React from 'react'
+import {React, useEffect} from 'react'
+import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap'
 import roadMapShap from "../assets/img/roadMapShap.png"
 import roadmapBubleShap from "../assets/img/roadmapboubleShap.png"
 export default function Roadmap() {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000,
+      });
+    }, []);
   return (
     <section className='roadmap'>
       

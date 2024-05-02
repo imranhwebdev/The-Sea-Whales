@@ -1,8 +1,7 @@
 .showcase{
     position: relative;
     z-index: 99;
-    rotate: -4deg;
-    padding-bottom: 160px;
+    padding-bottom:30px;
     padding-top: 50px;
     @include sm{
         padding-top: 0px;

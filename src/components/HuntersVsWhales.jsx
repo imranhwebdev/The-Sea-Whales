@@ -1,9 +1,15 @@
-import React from 'react'
+import {React, useEffect} from 'react'
+import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap'
 import huntervswhals from '../assets/img/huntervswhals.png';
 import hunterShap from '../assets/img/hunterShap.png';
 
 export default function HuntersVsWhales() {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000,
+      });
+    }, []);
   return (
     <section className='hunter'>
       <figure className='hunterShap'>

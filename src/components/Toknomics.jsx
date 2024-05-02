@@ -1,11 +1,17 @@
-import React from 'react'
+import {React, useEffect} from 'react'
+import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap'
 import TokenLeftImg from '../assets/img/toknomicsLeftImg.png';
 import tokenRightImg from '../assets/img/toknomicsRightImg.png';
 import tokenomicsBobule from '../assets/img/tokenomicsBobule.png';
 export default function Toknomics() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
   return (
-    <section className='toknomics'>
+    <section className='toknomics' id='tokenomics'>
         <figure className='tokenomicsBobule'>
             <img src={tokenomicsBobule} alt="" />
         </figure>

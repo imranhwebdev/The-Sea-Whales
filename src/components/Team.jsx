@@ -1,4 +1,5 @@
-import React from 'react'
+import {React, useEffect} from 'react'
+import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap'
 import teamBoubleShap from '../assets/img/teamBoubleShap.png';
 import avaterImg1 from '../assets/img/teamImg/teamImg1.png';
@@ -11,6 +12,11 @@ import avaterImg7 from '../assets/img/teamImg/teamImg7.png';
 import avaterImg8 from '../assets/img/teamImg/teamImg8.png';
 
 export default function Team() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
     const TeamItems = [
         {
             avaterImg: avaterImg1,

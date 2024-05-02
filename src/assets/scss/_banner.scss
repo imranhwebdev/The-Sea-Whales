@@ -4,6 +4,10 @@
     padding-top: 310px;
     padding-bottom: 130px;
     overflow: hidden;
+    @media(min-width:2500px){
+        padding-top: 360px;
+        padding-bottom: 300px;
+    }
     @include mmd{
         padding-top: 180px;
         padding-bottom: 90px;

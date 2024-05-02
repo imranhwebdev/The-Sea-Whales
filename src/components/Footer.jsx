@@ -4,31 +4,31 @@ import FooterLogo from '../assets/img/footerLogo.svg'
 export default function Footer(){
     const Footermenus = [
         {
-            menuLink: "https://google.com",
+            menuLink: "#",
             menuTxt: "Story",
         },
         {
-            menuLink: "https://google.com",
+            menuLink: "#about",
             menuTxt: "About",
         },
         {
-            menuLink: "https://google.com",
+            menuLink: "#roadmap",
             menuTxt: "Roadmap",
         },
         {
-            menuLink: "https://google.com",
+            menuLink: "#tokenomics",
             menuTxt: "Tokenomics",
         },
         {
-            menuLink: "https://google.com",
+            menuLink: "#showcase",
             menuTxt: "Showcase",
         },
         {
-            menuLink: "https://google.com",
+            menuLink: "#team",
             menuTxt: "Team",
         },
         {
-            menuLink: "https://google.com",
+            menuLink: "#faq",
             menuTxt: "FAQ",
         },
     ];

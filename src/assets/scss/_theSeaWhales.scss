@@ -1,7 +1,7 @@
 .theseaWhels{
     padding-bottom: 130px;
     position: relative;
-    z-index: 2;
+    z-index: 9;
     @include mmd{
         padding-bottom: 100px;
     }
@@ -22,6 +22,8 @@
     &-content{
         max-width: 868px;
         margin-inline: auto;
+        position: relative;
+        z-index: 0;
         h2{
             margin-bottom: 30px;
         }
