@@ -3,6 +3,22 @@
     z-index: 1;
     padding-top: 300px;
     padding-bottom: 200px;
+    @include lg{
+        padding-top: 150px;
+        padding-bottom: 170px;
+    }
+    @include mmd{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    @include sm{
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    @include ssm{
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
     .tokenomicsBobule{
         @include postion_shap_middle;
     }
@@ -111,6 +127,7 @@
             span{
             @include font-75;
             display: block;
+            color: #FC253E;
             }
         }
             p{

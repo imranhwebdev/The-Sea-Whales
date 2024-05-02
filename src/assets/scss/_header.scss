@@ -29,10 +29,10 @@
         animation: headerAnimation .5s linear;
         --bs-navbar-padding-y: 24px;
         @include md {
-            --bs-navbar-padding-y: 20px;
+            --bs-navbar-padding-y: 0px;
         }
         @include sm {
-            --bs-navbar-padding-y: 1rem;
+            --bs-navbar-padding-y: 0;
         }
     }
     &-menu {
@@ -164,12 +164,12 @@ button:focus {
 }
 .logo{
     img {
-        width: 379px;
+        width: 214px;
         @include lg{
-            width: 340px;
+            width: 200px;
         }
         @include mmd{
-            width: 220px;
+            width: 190px;
         }
         @include sm{
             width: 180px;

@@ -36,21 +36,19 @@ export default function Footer(){
         <footer className="footer">
            <Container>
             <Row className='justify-content-center footer-top'>
-                <Col md={4}>
-                    <div className="footer-left">
+                <Col lg={3} md={4}>
+                    <div className="footer-left text-center text-md-start">
                         <a href="/" className='footer-logo'>
                             <img src={FooterLogo} alt="" />
                         </a>
                     </div>
                 </Col>
-                <Col md={8}>
-                    <div className="footer-menu mt-4 mt-md-0">
-                        <ul>
-                            {Footermenus.map((item,index)=>(
-                                <li key={index}><a target='_blank' href="#">{item.menuTxt}</a></li>
-                            ))}
-                        </ul>
-                    </div>
+                <Col lg={9} md={8}>
+                    <ul className="footer-menu mt-2 mt-md-0">
+                        {Footermenus.map((item,index)=>(
+                            <li key={index}><a target='_blank' href="#">{item.menuTxt}</a></li>
+                        ))}
+                    </ul>
                 </Col>
             </Row>
             

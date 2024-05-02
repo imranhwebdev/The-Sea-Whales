@@ -1,0 +1,42 @@
+.theseaWhels{
+    padding-bottom: 130px;
+    @include mmd{
+        padding-bottom: 100px;
+    }
+    .theseaWhels3Img{
+        position: relative;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(181deg, rgba(7, 9, 19, 0.00) 1.11%, #070913 113.21%);
+            z-index: 2;
+        }
+    }
+    &-content{
+        max-width: 868px;
+        margin-inline: auto;
+        h2{
+            margin-bottom: 30px;
+        }
+        .subtitle{
+            color: rgba(255, 255, 255, 0.90);
+            font-family: "Poppins", sans-serif;
+            @include font-20;
+            font-weight: 500;
+            line-height: 150%; /* 30px */
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        p{
+            @include font-18;
+        }
+        .boxed-btn{
+            margin-top: 40px;
+        }
+    }
+}

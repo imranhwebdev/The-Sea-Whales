@@ -1,14 +1,9 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ctaBg from '../assets/img/ctaBG.png';
-import ctaBubleShap from '../assets/img/ctaBubleShap.png';
-
 export default function Cta() {
   return (
     <section className='cta'>
-        <figure className='ctaBubleShap'>
-            <img src={ctaBubleShap} alt="" />
-        </figure>
       <Container>
         <Row>
             <Col>
