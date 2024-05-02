@@ -17,14 +17,14 @@ export default function Toknomics() {
                             <img src={TokenLeftImg} alt="" />
                         </figure>
                         <div className="inner">
-                            <div className="section-title">
+                            <div className="section-title" data-aos="fade-up" data-aos-duration="1000">
                                 <h2><span>$WHALE</span> Tokenomics.</h2>
                             </div>
-                            <p>Total Supply: <b>100 billion $WHALE</b></p>
-                            <p>Tax: <b>0/0</b></p>
-                            <p>Secondary royalties collected from Sei Whale transactions used to periodically buy back and burn WHALE supply, pay staff, support builders and creators on SEI, marketing & other expenses</p>
-                            <p className='tokenNumber d-flex'>CA: <b>sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
-                            <div className="dual_btns">
+                            <p  data-aos="fade-up" data-aos-duration="1000">Total Supply: <b>100 billion $WHALE</b></p>
+                            <p  data-aos="fade-up" data-aos-duration="1100">Tax: <b>0/0</b></p>
+                            <p  data-aos="fade-up" data-aos-duration="1200">Secondary royalties collected from Sei Whale transactions used to periodically buy back and burn WHALE supply, pay staff, support builders and creators on SEI, marketing & other expenses</p>
+                            <p className='tokenNumber d-flex'  data-aos="fade-up" data-aos-duration="1300">CA: <b>sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
+                            <div className="dual_btns"  data-aos="fade-up" data-aos-duration="1400">
                                 <a href="#" className="boxed-btn">View Chart</a>
                                 <a href="#" className="boxed-btn transparent">Buy on Astroport</a>
                             </div>
@@ -38,14 +38,14 @@ export default function Toknomics() {
                             <img src={tokenRightImg} alt="" />
                         </figure>
                         <div className="inner">
-                            <div className="section-title">
+                            <div className="section-title"  data-aos="fade-up" data-aos-duration="1000">
                                 <h2><span>$BLUB</span> Tokenomics.</h2>
                             </div>
-                            <p>Total Supply: <b>100 billion Blub</b></p>
-                            <p>Tax: <b>0/0</b></p>
-                            <p>Secondary royalties collected from Sei Whale transactions used to periodically buy back and burn WHALE supply, pay staff, support builders and creators on SEI, marketing & other expenses</p>
-                            <p className='tokenNumber d-flex'>CA: <b>sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
-                            <div className="dual_btns">
+                            <p  data-aos="fade-up" data-aos-duration="1100">Total Supply: <b>100 billion Blub</b></p>
+                            <p  data-aos="fade-up" data-aos-duration="1200">Tax: <b>0/0</b></p>
+                            <p  data-aos="fade-up" data-aos-duration="1300">Secondary royalties collected from Sei Whale transactions used to periodically buy back and burn WHALE supply, pay staff, support builders and creators on SEI, marketing & other expenses</p>
+                            <p className='tokenNumber d-flex'  data-aos="fade-up" data-aos-duration="1400">CA: <b>sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
+                            <div className="dual_btns"  data-aos="fade-up" data-aos-duration="1500">
                                 <a href="#" className="boxed-btn">View Chart</a>
                                 <a href="#" className="boxed-btn transparent">Buy on Astroport</a>
                             </div>

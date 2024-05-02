@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap'
 import faqBubleShap from '../assets/img/faqBubleShap.png';
 import Accordion from 'react-bootstrap/Accordion';
 export default function Faq(){
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
     const accordionData = [
         {
             id:1,
@@ -62,7 +68,7 @@ export default function Faq(){
                     <div className="faq__wrapper">
                             <Accordion onSelect={handleAccordionSelect}>
                                 {accordionData.map((item) => (
-                                    <Accordion.Item key={item.id} eventKey={item.id.toString()}>
+                                    <Accordion.Item key={item.id} eventKey={item.id.toString()}  data-aos="fade-up" data-aos-duration="1000">
                                         <Accordion.Header className={activeKey === item.id.toString() ? 'active' : ''}>
                                             {item.title}
                                         </Accordion.Header>

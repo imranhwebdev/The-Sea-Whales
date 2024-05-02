@@ -70,7 +70,7 @@ export default function Team() {
                 <Row className='team-wrapper'>
                     {TeamItems.map((item, index)=>(
                     <Col xl={3} lg={4} md={6} className='team-single-item' key={index}>
-                        <div className="team-item text-center">
+                        <div className="team-item text-center" data-aos="fade-up" data-aos-duration="1000">
                             <div className="avater">
                                 <img className='avaterImg' src={item.avaterImg} alt="" />
                             </div>

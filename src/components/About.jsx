@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -7,6 +8,11 @@ import 'swiper/css/navigation';
 import aboutLeftImg from '../assets/img/aboutLeftImg.png';
 
 export default function About() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
     const aboutDesc = `<p>The blockchain oceans are home to a vast array of digital marine ecosystems, seas within smaller seas and secret hidden worlds. As humans pottered away in the real world, tinkering with archaic technology and petty politics, the mega systems of the blockchain oceans evolved, devolved and revolved flowing in and out in a symbiotic, yet simultaneously independent way. </p> 
     <p> Like their human counterparts, real life whales were also mammals with advanced intelligence. However, whales maintained a dignity well beyond that of the common ape. Whales, real whales, were becoming sick of being hunted for consumption, and thus they decided to evolve into the blockchain and finally liberate themselves from apes and reptiles alike. </p> 
     
@@ -80,11 +86,11 @@ export default function About() {
                         <div className="about-content">
                             {!sliderActive && (
                                 <div>
-                                    <div className="section-title">
+                                    <div className="section-title"  data-aos="fade-up" data-aos-duration="1000" >
                                         <h2><span>Revenge</span> Of The Sei Whales.</h2>
                                     </div>
-                                    <div dangerouslySetInnerHTML={{ __html: aboutDesc }} />
-                                    <button className='boxed-btn' onClick={activateSlider}>FIND OUT MORE</button>
+                                    <div dangerouslySetInnerHTML={{ __html: aboutDesc }}  data-aos="fade-up" data-aos-duration="1000" />
+                                    <button className='boxed-btn' onClick={activateSlider}  data-aos="fade-up" data-aos-duration="1000" >FIND OUT MORE</button>
                                 </div>
                             )}
                             {sliderActive && (
