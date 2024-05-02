@@ -1,21 +1,27 @@
-import {React, useEffect} from 'react'
+import React, { useEffect } from 'react';
 import AOS from 'aos';
-import { Col, Container, Row } from 'react-bootstrap'
-import herobg from '../assets/img/heroBg.jpg'
-import heroshap from '../assets/img/hero-shap.png'
+import { Col, Container, Row } from 'react-bootstrap';
+import herobg from '../assets/img/heroBg.jpg';
+import heroShap from '../assets/img/hero-shap.png';
+import bobule from '../assets/img/bobule.gif';
+
 export default function Banner(){
     useEffect(() => {
         AOS.init({
           duration: 1000,
         });
       }, []);
+    
     return(
         <section className="banner">
             <figure className='herobg'>
                 <img src={herobg} alt="" />
             </figure>
             <div className="heroshap">
-                <img src={heroshap} alt="" />
+                <img src={bobule} alt="" />
+            </div>
+            <div className="heroshap">
+                <img src={heroShap} alt="" />
             </div>
             <Container>
                 <Row className='justify-content-center'>

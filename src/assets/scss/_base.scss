@@ -164,3 +164,26 @@ input::-webkit-inner-spin-button {
 
 
 
+
+
+
+
+
+.showcaseOne, .showcaseTwo, .showcaseThree{
+    transform: rotate(-4deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  .track {
+    white-space: nowrap;
+    will-change: transform;
+  }
+  
+}
+
+
+.marquee.four{
+    top: 100px;
+}
+  

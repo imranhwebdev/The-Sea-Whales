@@ -7,12 +7,14 @@ import TheseaWhels from './components/TheseaWhels'
 import HuntersVsWhales from './components/HuntersVsWhales'
 import Roadmap from './components/Roadmap'
 import Toknomics from './components/Toknomics'
-import Showcase from './components/Showcase'
 import Team from './components/Team'
 import Faq from './components/Faq'
 import Cta from './components/Cta'
 import Footer from './components/Footer'
 import MarqueeTwo from './components/MarqueeTwo';
+import ShowcaseTwo from './components/ShowcaseTwo'
+import ShowcaseThree from './components/ShowcaseThree'
+import ShowcaseOne from './components/ShowcaseOne'
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
       <HuntersVsWhales />
       <Roadmap />
       <Toknomics />
-      <Showcase />
+      <ShowcaseOne />
+      <ShowcaseTwo />
+      <ShowcaseThree />
       <MarqueeTwo />
       <Team />
       <Faq />

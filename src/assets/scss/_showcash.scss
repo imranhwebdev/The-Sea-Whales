@@ -1,7 +1,6 @@
 .showcase{
     position: relative;
     z-index: 99;
-    padding-bottom:30px;
     padding-top: 50px;
     @include sm{
         padding-top: 0px;
@@ -14,11 +13,10 @@
     .single-item{
         position: relative;
         z-index: 1;
-        img{
-            height: 450px;
-            @include mmd{
-                height: 300px;
-            }
+        width: 366px;
+        height: 100%;
+        @include mmd{
+            height: 100%;
         }
     }
     .showcase-info{
@@ -53,6 +51,19 @@
             @include font-18;
             font-weight: 500;
             line-height: 150%; /* 27px */
+        }
+    }
+}
+.showcaseOne{
+    padding-bottom: 50px;
+    .single-item{
+        position: relative;
+        z-index: 1;
+        width: 1100px;
+        height: 90px;
+        @include mmd{
+            width: 700px;
+            height: 70px;
         }
     }
 }
