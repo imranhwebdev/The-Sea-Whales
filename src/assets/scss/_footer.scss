@@ -38,6 +38,7 @@
         @include sm{
             padding-top: 25px;
             border-radius: 0px;
+            padding-inline: 10px;
         }
         .footer-menu{
             text-align: right;
@@ -45,13 +46,16 @@
             flex-wrap: wrap;
             column-gap: 30px;
             justify-content: end;
+            @include md{
+                column-gap: 0px;
+            }
             @include sm{
                 justify-content: center;
-                column-gap: 20px;
+                column-gap: 10px;
             }
             @include ssm{
                 justify-content: center;
-                column-gap: 10px;
+                column-gap: 0px;
             }
             li{
                 a{
@@ -64,6 +68,9 @@
                     line-height: 150%; /* 27px */
                     letter-spacing: 0.72px;
                     padding: 10px 15px;
+                    @include md{
+                        padding-inline: 8px;
+                    }
                 }
                 &:hover a{
                     color: $white;

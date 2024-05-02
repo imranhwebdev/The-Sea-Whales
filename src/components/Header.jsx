@@ -54,12 +54,12 @@ export default function Header() {
             </div>
             <ul className="main_menu d-xl-flex align-items-center">
               <Link href="Story" onClick={scrollToTop} className='heading-link text-capitalize' spy={true} smooth={true} offset={-320} duration={150} >Story</Link>
-              <Link to="About" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >About</Link>
-              <Link to="Roadmap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={50} >Roadmap</Link>
-              <Link to="Tokenomics" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Tokenomics</Link>
-              <Link to="Showcase" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Showcase</Link>
-              <Link to="Team" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Team</Link>
-              <Link to="FAQ" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >FAQ</Link>
+              <Link to="about" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >About</Link>
+              <Link to="roadmap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={50} >Roadmap</Link>
+              <Link to="tokenomics" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Tokenomics</Link>
+              <Link to="showcase" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Showcase</Link>
+              <Link to="team" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Team</Link>
+              <Link to="faq" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >FAQ</Link>
             </ul>
             <div className="header-btns d-xl-none">
               <a href="#" className='boxed-btn'>Join The Whales</a>
