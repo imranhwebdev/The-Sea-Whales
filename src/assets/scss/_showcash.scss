@@ -4,6 +4,10 @@
     rotate: -4deg;
     padding-bottom: 160px;
     padding-top: 50px;
+    @include sm{
+        padding-top: 0px;
+        padding-bottom: 70px;
+    }
     .rfm-child {
         margin-right: 30px;
         position: relative;
@@ -27,6 +31,9 @@
         background: rgba(255, 255, 255, 0.10);
         backdrop-filter: blur(126.5px);
         padding: 20px;
+        @include sm{
+            border-radius: 10px;
+        }
         .right img {
             max-width: 20px;
             height: auto;

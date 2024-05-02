@@ -5,13 +5,13 @@ import Marquee from './components/Marquee'
 import About from './components/About'
 import TheseaWhels from './components/TheseaWhels'
 import HuntersVsWhales from './components/HuntersVsWhales'
+import Roadmap from './components/Roadmap'
 import Toknomics from './components/Toknomics'
 import Showcase from './components/Showcase'
 import MarqueeTwo from './components/MarqueeTwo'
 import Team from './components/Team'
 import Faq from './components/Faq'
 import Cta from './components/Cta'
-// import Roadmap from './components/Roadmap'
 import Footer from './components/Footer'
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
       <About />
       <TheseaWhels />
       <HuntersVsWhales />
+      <Roadmap />
       <Toknomics />
       <Showcase />
       <MarqueeTwo />
@@ -31,7 +32,6 @@ function App() {
       <Faq />
       <Cta />
       <MarqueeTwo />
-      {/* <Roadmap /> */}
       <Footer />
     </>
   )

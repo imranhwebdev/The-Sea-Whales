@@ -1,6 +1,7 @@
 .team{
     position: relative;
     z-index: 1;
+    padding-top: 50px;
     .teamBoubleShap{
         position: absolute;
         left: 0;
@@ -42,6 +43,10 @@
     padding: 10px;
     padding-bottom: 20px;
     height: 100%;
+    @include sm{
+        max-width: 436px;
+        margin: 0 auto;
+    }
 }
 
 .team-single-item {

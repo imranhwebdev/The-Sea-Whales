@@ -1,5 +1,7 @@
 .theseaWhels{
     padding-bottom: 130px;
+    position: relative;
+    z-index: 2;
     @include mmd{
         padding-bottom: 100px;
     }

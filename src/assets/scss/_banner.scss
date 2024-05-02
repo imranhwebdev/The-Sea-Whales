@@ -22,6 +22,9 @@
         z-index: -1;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 74.95%, #070913 98.56%), linear-gradient(180deg, rgba(0, 0, 0, 0.98) -23.01%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.30) 21.48%, rgba(0, 0, 0, 0.00) 100%);
     }
+    .herobg img{
+        object-fit: cover;
+    }
     .herobg img, .heroshap{
         position: absolute;
         left: 0%;

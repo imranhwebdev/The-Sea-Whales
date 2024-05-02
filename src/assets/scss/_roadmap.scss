@@ -1,3 +1,104 @@
 .roadmap{
-    
+    padding-top: 180px;
+    @include sm{
+        padding-top: 100px;
+    }
+    &-content{
+        .container{
+            position: relative;
+            z-index: 1;
+        }
+        .roadmapShap img{
+            position: absolute;
+            top: 0;
+            left: -10%;
+            width: 120%;
+            height: 100%;
+            z-index: -1;
+            @include sm{
+                display: none;
+            }
+        }
+        &-left{
+            max-width: 390px;
+            margin-left: 31%;
+            @include sm{
+                margin-inline: auto;
+                max-width: 300px;
+            }
+        }
+        &-right{
+            max-width: 390px;
+            margin-left: 31%;
+            @include sm{
+                margin-inline: auto;
+                max-width: 300px;
+            }
+            & .roadmap-single-item{
+                &::before{
+                    left: -67px !important;
+                    @include lg{
+                        left: -15.3% !important;
+
+                    }
+                    @include mmd{
+                        left: -16.7% !important;
+
+                    }
+                }
+            }
+        }
+        .roadmap-single-item{
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 1;
+            @include sm{
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                left: -15.7%;
+                top: 5px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-image:url('../img/roadmapDot.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left;
+                @include xl{
+                    left: -13.7%;
+
+                }
+                @include lg{
+                    left: -13.4%;
+
+                }
+                @include mmd{
+                    left: -14.5%;
+
+                }
+                @include sm{
+                   display: none;
+
+                }
+            }
+            h4{
+                color: rgba(255, 255, 255, 0.90);
+                font-family: "Poppins", sans-serif;
+                @include font-30;
+                font-weight: 700;
+                line-height: 140%;
+                margin-bottom: 10px;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.70);
+                @include font-18;
+                font-weight: 500;
+                line-height: 150%;
+            };
+        }
+    }
 }
