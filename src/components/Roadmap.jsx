@@ -1,9 +1,14 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import roadMapShap from "../assets/img/roadMapShap.png"
+import roadmapBubleShap from "../assets/img/roadmapboubleShap.png"
 export default function Roadmap() {
   return (
     <section className='roadmap'>
+      
+        <figure className='roadmapBubleShap'>
+            <img src={roadmapBubleShap} alt="" />
+        </figure>
       <Container>
         <Row>
           <Col>

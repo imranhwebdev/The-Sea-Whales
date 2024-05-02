@@ -79,9 +79,16 @@
             line-height: 120%;
             letter-spacing: 1.3px;
             color: $white;
-            @include sm{
+            @include mmd{
                 font-size: 18px;
                 padding:25px 0;
+                padding-right: 30px;
+                letter-spacing: normal;
+                line-height: 140%;
+            }
+            @include sm{
+                font-size: 18px;
+                padding:20px 0;
                 padding-right: 30px;
             }
         }

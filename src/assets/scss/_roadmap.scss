@@ -1,7 +1,19 @@
 .roadmap{
     padding-top: 180px;
+    position: relative;
+    z-index: 1;
     @include sm{
         padding-top: 100px;
+    }
+    .roadmapBubleShap img{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 10%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
     }
     &-content{
         .container{
