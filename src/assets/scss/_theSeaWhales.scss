@@ -25,6 +25,9 @@
         margin-inline: auto;
         position: relative;
         z-index: 2;
+        @include sm{
+            margin-top: 0;
+        }
         h2{
             margin-bottom: 30px;
         }
@@ -53,5 +56,8 @@
       }
       .swiper{
         padding-bottom: 0 !important;
+        @include sm{
+            padding-bottom: 120px;
+        }
       }
 }
