@@ -13,16 +13,17 @@ export default function About() {
           duration: 1000,
         });
       }, []);
-    const aboutDesc = `<p>The blockchain oceans are home to a vast array of digital marine ecosystems, seas within smaller seas and secret hidden worlds. As humans pottered away in the real world, tinkering with archaic technology and petty politics, the mega systems of the blockchain oceans evolved, devolved and revolved flowing in and out in a symbiotic, yet simultaneously independent way. </p> 
-    <p> Like their human counterparts, real life whales were also mammals with advanced intelligence. However, whales maintained a dignity well beyond that of the common ape. Whales, real whales, were becoming sick of being hunted for consumption, and thus they decided to evolve into the blockchain and finally liberate themselves from apes and reptiles alike. </p> 
-    
-    <p> It is in this underwater digital expanse that the Sei Whales emerged, mammalian at first, then blockchainian. They minted themselves into the blockchain to escape the onslaught of human consumption altogether. By digitising themselves, their DNA became encoded, their survival safe guarded. In the vast expanse of the blockchain oceans, the Sei Whales roamed with dignity. 
-    </p> 
-    <p>These digital titans traversed the Ethereum Expanse, the Solana Sea, Cardanic Coral Enclaves and even into smaller estuaries like the Avalanche and Dot. However, once again, as had been the case with their past evolutions, the spectre of greed manifested once more and once again these majestic creatures were hunted to the point of extinction. Their numbers dwindled yet again, leaving only 5,000.</p> `
 
-
-    const [sliderActive, setSliderActive] = useState(false);
     const aboutContentItems = [
+        {
+            title: "<span>Revenge</span> Of The Sei Whales.",
+            desc:  `<p>The blockchain oceans are home to a vast array of digital marine ecosystems, seas within smaller seas and secret hidden worlds. As humans pottered away in the real world, tinkering with archaic technology and petty politics, the mega systems of the blockchain oceans evolved, devolved and revolved flowing in and out in a symbiotic, yet simultaneously independent way. </p> 
+            <p> Like their human counterparts, real life whales were also mammals with advanced intelligence. However, whales maintained a dignity well beyond that of the common ape. Whales, real whales, were becoming sick of being hunted for consumption, and thus they decided to evolve into the blockchain and finally liberate themselves from apes and reptiles alike. </p> 
+            
+            <p> It is in this underwater digital expanse that the Sei Whales emerged, mammalian at first, then blockchainian. They minted themselves into the blockchain to escape the onslaught of human consumption altogether. By digitising themselves, their DNA became encoded, their survival safe guarded. In the vast expanse of the blockchain oceans, the Sei Whales roamed with dignity. 
+            </p> 
+            <p>These digital titans traversed the Ethereum Expanse, the Solana Sea, Cardanic Coral Enclaves and even into smaller estuaries like the Avalanche and Dot. However, once again, as had been the case with their past evolutions, the spectre of greed manifested once more and once again these majestic creatures were hunted to the point of extinction. Their numbers dwindled yet again, leaving only 5,000.</p> `,
+        },
         {
             title: "<span>Revenge</span> Of The Sei Whales.",
             desc: `<p> The blockchain oceans are home to a vast array of digital marine ecosystems, seas within smaller seas and secret hidden worlds. As humans pottered away in the real world, tinkering with archaic technology and petty politics, the mega systems of the blockchain oceans evolved, devolved and revolved flowing in and out in a symbiotic, yet simultaneously independent way. </p> 
@@ -69,10 +70,6 @@ export default function About() {
         },
     ];
 
-    const activateSlider = () => {
-        setSliderActive(true);
-    };
-
     return (
         <section className="about">
             <Container>
@@ -84,38 +81,27 @@ export default function About() {
                     </Col>
                     <Col lg={6}>
                         <div className="about-content">
-                            {!sliderActive && (
-                                <div>
-                                    <div className="section-title"  data-aos="fade-up" data-aos-duration="1000" >
-                                        <h2><span>Revenge</span> Of The Sei Whales.</h2>
-                                    </div>
-                                    <div dangerouslySetInnerHTML={{ __html: aboutDesc }}  data-aos="fade-up" data-aos-duration="1000" />
-                                    <button className='boxed-btn' onClick={activateSlider}  data-aos="fade-up" data-aos-duration="1000" >FIND OUT MORE</button>
-                                </div>
-                            )}
-                            {sliderActive && (
-                                <Swiper
-                                    centeredSlides={true}
-                                    slidesPerView={1}
-                                    spaceBetween={10}
-                                    pagination={{
-                                        clickable: true,
-                                    }}
-                                    loop={true}
-                                    navigation={true}
-                                    modules={[Navigation]}
-                                    className="mySwiper"
-                                >
-                                    {aboutContentItems.map((item, index) => (
-                                        <SwiperSlide key={index} className="about-sinlge-item">
-                                            <div className="section-title">
-                                                <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
-                                            </div>
-                                            <p dangerouslySetInnerHTML={{ __html: item.desc }} />
-                                        </SwiperSlide>
-                                    ))}
-                                </Swiper>
-                            )}
+                            <Swiper
+                                centeredSlides={true}
+                                slidesPerView={1}
+                                spaceBetween={10}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                loop={true}
+                                navigation={true}
+                                modules={[Navigation]}
+                                className="mySwiper"
+                            >
+                                {aboutContentItems.map((item, index) => (
+                                    <SwiperSlide key={index} className="about-sinlge-item">
+                                        <div className="section-title">
+                                            <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
+                                        </div>
+                                        <p dangerouslySetInnerHTML={{ __html: item.desc }} />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
                     </Col>
                 </Row>

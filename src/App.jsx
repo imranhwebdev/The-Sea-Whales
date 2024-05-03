@@ -34,6 +34,7 @@ function App() {
       <Team />
       <Faq />
       <Cta />
+      <Marquee />
       <Footer />
     </>
   )

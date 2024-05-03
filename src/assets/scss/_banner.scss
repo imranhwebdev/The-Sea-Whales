@@ -69,4 +69,44 @@
             }
         }
     }
+    .scroll img {
+        max-width: 21px;
+        margin-top: 55px;
+        @include transition;
+        cursor: pointer;
+        &:hover{
+            opacity: .5;
+        }
+    }
+    
+    .container{
+        position: relative;
+    }
+    .social-box {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        li{
+            a{ 
+                width: 47.674px;
+                height: 47.674px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                border-radius: 47.674px;
+                border: 0.745px solid rgba(152, 190, 255, 0.12);
+                background: rgba(152, 190, 255, 0.06);
+                backdrop-filter: blur(12.663517951965332px);
+                display: flex;
+                align-items: center;
+                justify-content: center;        
+                img{
+                    max-width: 25px;
+                }
+            }
+            &:hover a{
+                background:$primary;
+            }
+        }
+    }
 }

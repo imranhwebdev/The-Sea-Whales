@@ -1,6 +1,6 @@
 import { React } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import FooterLogo from '../assets/img/footerLogo.svg'
+import FooterLogo from '../assets/img/FooterLogo.png'
 export default function Footer(){
     const Footermenus = [
         {
@@ -35,7 +35,7 @@ export default function Footer(){
     return(
         <footer className="footer">
            <Container>
-            <Row className='justify-content-center footer-top'>
+            <Row className='justify-content-center footer-top align-items-center'>
                 <Col lg={3} md={4}>
                     <div className="footer-left text-center text-md-start">
                         <a href="/" className='footer-logo'>

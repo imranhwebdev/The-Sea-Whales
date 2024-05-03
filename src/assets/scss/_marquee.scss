@@ -22,9 +22,22 @@
 .rfm-child {
     figure {
         img {
-            max-width: 1100px;
+            max-width: 657px;
             @include mmd{
-                max-width: 600px;
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+.marquee.four{
+    .rfm-child {
+        figure {
+            img {
+                max-width: 937px;
+                @include mmd{
+                    max-width: 600px;
+                }
             }
         }
     }

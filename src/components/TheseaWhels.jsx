@@ -1,11 +1,10 @@
-import {React, useEffect, Component} from 'react'
+import {React, useEffect} from 'react'
 import AOS from 'aos';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import { Col, Container, Row } from 'react-bootstrap'
-import theseaWhels3Img from '../assets/img/theseaWhels-3Imgs.png';
 import theseaWhels1 from '../assets/img/SeiWhale_Pitch_1.png';
 import theseaWhels2 from '../assets/img/SeiWhale_Pitch_2.png';
 import theseaWhels3 from '../assets/img/SeiWhale_Pitch_3.png';
