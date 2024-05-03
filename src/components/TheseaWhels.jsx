@@ -1,7 +1,14 @@
-import {React, useEffect} from 'react'
+import {React, useEffect, Component} from 'react'
 import AOS from 'aos';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay} from 'swiper/modules';
+import 'swiper/css';
 import { Col, Container, Row } from 'react-bootstrap'
 import theseaWhels3Img from '../assets/img/theseaWhels-3Imgs.png';
+import theseaWhels1 from '../assets/img/SeiWhale_Pitch_1.png';
+import theseaWhels2 from '../assets/img/SeiWhale_Pitch_2.png';
+import theseaWhels3 from '../assets/img/SeiWhale_Pitch_3.png';
 
 export default function TheseaWhels() {
   useEffect(() => {
@@ -9,11 +16,48 @@ export default function TheseaWhels() {
       duration: 1000,
     });
   }, []);
+  const aboutContentItems = [
+    {
+      img: theseaWhels1,
+    },
+    {
+      img: theseaWhels2,
+    },
+    {
+      img: theseaWhels3
+    },
+    {
+      img: theseaWhels1,
+    },
+    {
+      img: theseaWhels2,
+    },
+    {
+      img: theseaWhels3
+    },
+  ]
   return (
     <section className='theseaWhels'>
-      <figure className='theseaWhels3Img'> 
-        <img src={theseaWhels3Img} alt="" />
-      </figure>
+       <Swiper
+            centeredSlides={true}
+            slidesPerView={3}
+            spaceBetween={20}
+            loop={true}            
+            preventInteractionOnTransition= {true}
+            speed= {2000}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction:false,
+            }}            
+            modules={[Autoplay]}
+            className="mySwiper theseaWhels3Img"
+        >
+            {aboutContentItems.map((item, index) => (
+                <SwiperSlide key={index} className="about-sinlge-item">
+                    <img src={item.img} alt="" />
+                </SwiperSlide>
+            ))}
+        </Swiper>
       <Container>
         <Row>
             <Col>

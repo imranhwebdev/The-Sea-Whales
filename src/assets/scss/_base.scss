@@ -185,5 +185,8 @@ input::-webkit-inner-spin-button {
 
 .marquee.four{
     top: 100px;
+    @include sm{
+        top: 0;
+    }
 }
   

@@ -18,6 +18,9 @@
         @include mmd{
             height: 100%;
         }
+        @include sm{
+            width: 280px;
+        }
     }
     .showcase-info{
         position: absolute;
