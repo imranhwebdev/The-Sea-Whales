@@ -60,7 +60,7 @@ export default function Banner(){
                         </div>
                     </Col>
                 </Row>
-                <ul className="social-box">
+                <ul className="social-box d-none d-sm-block">
                     {socialItems.map((item, index)=>(
                         <li key={index}><a href={item.socialurl}><img src={item.socialLogo} alt="" /></a></li>
                     ))}
