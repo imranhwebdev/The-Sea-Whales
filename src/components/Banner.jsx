@@ -9,7 +9,7 @@ import socialLogo1 from '../assets/img/discord.svg';
 import socialLogo2 from '../assets/img/Envelope.svg';
 import socialLogo3 from '../assets/img/twitter.svg';
 import socialLogo4 from '../assets/img/telegram.svg';
-import bobule from '../assets/img/bobule.gif';
+// import bobule from '../assets/img/bobule.gif';
 
 export default function Banner(){
     useEffect(() => {
@@ -40,9 +40,9 @@ export default function Banner(){
             <figure className='herobg'>
                 <img src={herobg} alt="" />
             </figure>
-            <div className="heroshap">
+            {/* <div className="heroshap">
                 <img src={bobule} alt="" />
-            </div>
+            </div> */}
             <div className="heroshap">
                 <img src={heroShap} alt="" />
             </div>
