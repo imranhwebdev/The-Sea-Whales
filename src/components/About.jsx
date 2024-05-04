@@ -75,7 +75,7 @@ export default function About() {
             <Container>
                 <Row className='align-items-center'>
                     <Col lg={6}>
-                        <div className="aboutLeft">
+                        <div className="aboutLeft" data-aos="fade-right">
                             <img src={aboutLeftImg} alt="" />
                         </div>
                     </Col>
@@ -95,10 +95,10 @@ export default function About() {
                             >
                                 {aboutContentItems.map((item, index) => (
                                     <SwiperSlide key={index} className="about-sinlge-item">
-                                        <div className="section-title">
+                                        <div className="section-title" data-aos="fade-up">
                                             <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
                                         </div>
-                                        <p dangerouslySetInnerHTML={{ __html: item.desc }} />
+                                        <p dangerouslySetInnerHTML={{ __html: item.desc }} data-aos="fade-up"/>
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
