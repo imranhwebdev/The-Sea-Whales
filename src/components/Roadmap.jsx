@@ -1,21 +1,32 @@
-import {React, useEffect} from 'react'
+import {React, useEffect,  useRef, useState } from 'react'
 import AOS from 'aos';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel } from 'swiper/modules';
+import 'swiper/css';
 import { Col, Container, Row } from 'react-bootstrap'
 import roadMapShap from "../assets/img/roadMapShap.png"
 import roadmapBubleShap from "../assets/img/roadmapboubleShap.png"
 export default function Roadmap() {
-  useEffect(() => {
-      AOS.init({
-        duration: 1000,
-      });
-    }, []);
+    const sectionAboveSwiperRef = useRef(null);
+    const nextSectionRef = useRef(null);
+
+    const handleSwiperReachEnd = () => {
+      if (nextSectionRef.current) {
+        nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+  
+    const handleSwiperReachBeginning = () => {
+      if (sectionAboveSwiperRef.current) {
+        sectionAboveSwiperRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
+    };
   return (
     <section className='roadmap'>
-      
         <figure className='roadmapBubleShap'>
             <img src={roadmapBubleShap} alt="" />
         </figure>
-      <Container>
+      <Container  ref={sectionAboveSwiperRef}>
         <Row>
           <Col>
             <div className="section-title mb-5 pb-3 text-center text-md-start"  data-aos="fade-up" data-aos-duration="1000">
@@ -27,40 +38,126 @@ export default function Roadmap() {
 
       <div className="roadmap-content">
         <Container>
-        <div className="roadmapShap">
-          <img src={roadMapShap} alt="" />
-        </div>
           <Row>
-            <Col sm={6}>
+            <Swiper
+              direction={'horizontal'}
+              centeredSlides={true}
+              slidesPerView={4}
+              spaceBetween={20}        
+              mousewheel={true}           
+              modules={[Mousewheel ]}
+              className="mySwiper theseaWhels3Img"
+              onReachEnd={handleSwiperReachEnd}
+              onReachBeginning={handleSwiperReachBeginning}
+              breakpoints={{
+                '@0.00': {
+                slidesPerView: 1,
+                },
+                '@0.75': {
+                slidesPerView: 2,
+                },
+                '@1.00': {
+                slidesPerView: 3,
+                },
+                '@1.50': {
+                slidesPerView: 3,
+                },
+            }}
+          >
+          <SwiperSlide className="about-sinlge-item">
               <div className="roadmap-content-left">
-                <div className="roadmap-single-item"  data-aos="fade-up" data-aos-duration="1000">
+                <div className="roadmap-single-item">
                   <h4>A New Era</h4>
                   <p>5,000 Sei Whales Splash Into The Sei Blockchain Seas.</p>
                 </div>
-                <div className="roadmap-single-item"  data-aos="fade-up" data-aos-duration="1000">
+                <div className="roadmap-single-item">
                   <h4>Sei-Volution</h4>
                   <p>Royalties To Buyback And Burn The $WHALE Token. Grants To Develop The Ecosystem.</p>
                 </div>
-                <div className="roadmap-single-item"  data-aos="fade-up" data-aos-duration="1000">
+                <div className="roadmap-single-item">
                   <h4>The Pod</h4>
                   <p>Access To An Exclusive Community, Free Mints, Upcoming Projects, And Much More.</p>
                 </div>
               </div>
-            </Col>
-            <Col sm={6}>
-              <div className="roadmap-content-right">
-                <div className="roadmap-single-item"  data-aos="fade-up" data-aos-duration="1000">
-                  <h4>The Merch</h4>
-                  <p>Marketplace With Members Exclusive Merchandise.</p>
+          </SwiperSlide>
+            <SwiperSlide className="about-sinlge-item">
+                <div className="roadmap-content-left">
+                  <div className="roadmap-single-item">
+                    <h4>The Merch</h4>
+                    <p>Marketplace With Members Exclusive Merchandise.</p>
+                  </div>
+                  <div className="roadmap-single-item">
+                    <h4>The Revenge</h4>
+                    <p>After Years Of Being Hunted, The Sei Whales Put Their Final Plans Into Action.</p>
+                  </div>
                 </div>
-                <div className="roadmap-single-item"  data-aos="fade-up" data-aos-duration="1000">
-                  <h4>The Revenge</h4>
-                  <p>After Years Of Being Hunted, The Sei Whales Put Their Final Plans Into Action.</p>
+            </SwiperSlide>
+            <SwiperSlide className="about-sinlge-item">
+                <div className="roadmap-content-left">
+                  <div className="roadmap-single-item">
+                    <h4>The Merch</h4>
+                    <p>Marketplace With Members Exclusive Merchandise.</p>
+                  </div>
+                  <div className="roadmap-single-item">
+                    <h4>The Revenge</h4>
+                    <p>After Years Of Being Hunted, The Sei Whales Put Their Final Plans Into Action.</p>
+                  </div>
                 </div>
-              </div>
-            </Col>
+            </SwiperSlide>
+            <SwiperSlide className="about-sinlge-item">
+                <div className="roadmap-content-left">
+                  <div className="roadmap-single-item">
+                    <h4>The Merch</h4>
+                    <p>Marketplace With Members Exclusive Merchandise.</p>
+                  </div>
+                  <div className="roadmap-single-item">
+                    <h4>The Revenge</h4>
+                    <p>After Years Of Being Hunted, The Sei Whales Put Their Final Plans Into Action.</p>
+                  </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="about-sinlge-item">
+                <div className="roadmap-content-left">
+                  <div className="roadmap-single-item">
+                    <h4>The Merch</h4>
+                    <p>Marketplace With Members Exclusive Merchandise.</p>
+                  </div>
+                  <div className="roadmap-single-item">
+                    <h4>The Revenge</h4>
+                    <p>After Years Of Being Hunted, The Sei Whales Put Their Final Plans Into Action.</p>
+                  </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="about-sinlge-item">
+                <div className="roadmap-content-left">
+                  <div className="roadmap-single-item">
+                    <h4>The Merch</h4>
+                    <p>Marketplace With Members Exclusive Merchandise.</p>
+                  </div>
+                  <div className="roadmap-single-item">
+                    <h4>The Revenge</h4>
+                    <p>After Years Of Being Hunted, The Sei Whales Put Their Final Plans Into Action.</p>
+                  </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="about-sinlge-item">
+                <div className="roadmap-content-left">
+                  <div className="roadmap-single-item">
+                    <h4>The Merch</h4>
+                    <p>Marketplace With Members Exclusive Merchandise.</p>
+                  </div>
+                  <div className="roadmap-single-item">
+                    <h4>The Revenge</h4>
+                    <p>After Years Of Being Hunted, The Sei Whales Put Their Final Plans Into Action.</p>
+                  </div>
+                </div>
+            </SwiperSlide>
+        </Swiper>
           </Row>
         </Container>
+      </div>
+
+      <div ref={nextSectionRef}>
       </div>
     </section>
   )

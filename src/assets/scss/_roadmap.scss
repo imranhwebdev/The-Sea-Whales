@@ -66,7 +66,6 @@
             z-index: 1;
             @include sm{
                 margin-bottom: 30px;
-                text-align: center;
             }
             &::before{
                 position: absolute;
@@ -81,19 +80,23 @@
                 background-size: contain;
                 background-position: left;
                 @include xl{
-                    left: -13.7%;
+                    left: -18%;
 
                 }
                 @include lg{
-                    left: -13.4%;
+                    left: -20.5%;
 
                 }
-                @include mmd{
-                    left: -14.5%;
+                @include md{
+                    left: -19.2%;
 
                 }
                 @include sm{
-                   display: none;
+                    left: -18%;
+
+                }
+                @include ssm{
+                    left: -18.3%;
 
                 }
             }
@@ -113,4 +116,19 @@
             };
         }
     }
+}
+
+.roadmap-content-left {
+    position: relative;
+    z-index: 1;
+}
+
+.roadmap-content-left:before {
+    position: absolute;
+    content: "";
+    left: -40px;
+    top: 10px;
+    width: 2px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.10);
 }
