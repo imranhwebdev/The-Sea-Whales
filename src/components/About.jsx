@@ -83,6 +83,7 @@ export default function About() {
                         <div className="about-content">
                             <Swiper
                                 centeredSlides={true}
+                                autoHeight={true}
                                 slidesPerView={1}
                                 spaceBetween={10}
                                 pagination={{
