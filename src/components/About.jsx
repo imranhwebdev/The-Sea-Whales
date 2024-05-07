@@ -73,14 +73,18 @@ export default function About() {
     return (
         <section className="about">
             <Container>
-                <Row className='align-items-center'>
+                <Row>
                     <Col lg={6}>
                         <div className="aboutLeft" data-aos="fade-right">
                             <img src={aboutLeftImg} alt="" />
                         </div>
                     </Col>
                     <Col lg={6}>
+                        
                         <div className="about-content">
+                            <div className="section-title" data-aos="fade-up">
+                                <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
+                            </div>
                             <Swiper
                                 centeredSlides={true}
                                 autoHeight={true}
@@ -96,9 +100,7 @@ export default function About() {
                             >
                                 {aboutContentItems.map((item, index) => (
                                     <SwiperSlide key={index} className="about-sinlge-item">
-                                        <div className="section-title" data-aos="fade-up">
-                                            <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
-                                        </div>
+                                        
                                         <p dangerouslySetInnerHTML={{ __html: item.desc }} data-aos="fade-up"/>
                                     </SwiperSlide>
                                 ))}
