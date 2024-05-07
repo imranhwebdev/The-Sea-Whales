@@ -1,7 +1,7 @@
 .toknomics{
     position: relative;
     z-index: 1;
-    padding-top: 30px;
+    padding-top: 250px;
     padding-bottom: 200px;
     @include lg{
         padding-top: 150px;
@@ -24,7 +24,7 @@
     }
     & .vs_and{
         position: absolute;
-        top: 30px;
+        top: 180px;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;

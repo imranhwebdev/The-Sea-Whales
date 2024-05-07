@@ -122,20 +122,6 @@
         }
     }
     
-.roadmap-content-left {
-    position: relative;
-    z-index: 1;
-}
-
-.roadmap-content-left:before {
-    position: absolute;
-    content: "";
-    left: -40px;
-    top: 10px;
-    width: 2px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.10);
-}
 
 .about-sinlge-item {
     @include mmd{
