@@ -1,6 +1,9 @@
 .footer{
     position: relative;
     z-index: 1;
+    @include sm{
+        margin-top: 30px;
+    }
     &:before{
         position: absolute;
         content: "";
@@ -26,7 +29,7 @@
         rotate: 180deg;
     }
     .footer-logo img{
-        max-width: 214px;
+        max-width: 183px;
     }
 
     .footer-top{

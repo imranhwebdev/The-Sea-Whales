@@ -136,6 +136,9 @@
         @include mmd{
             border-radius: 0;
         }
+        @include mmd{
+           padding: 7px 15px;
+        }
     }
   
     &-toggler {
@@ -164,16 +167,7 @@ button:focus {
 }
 .logo{
     img {
-        width: 214px;
-        @include lg{
-            width: 200px;
-        }
-        @include mmd{
-            width: 190px;
-        }
-        @include sm{
-            width: 180px;
-        }
+        width: 165px;
     }
 }
 .boxed-btn{

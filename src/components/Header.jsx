@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import logo from '../assets/img/Logo.png'
-import logo2 from '../assets/img/mobileSiteLogo.png'
 export default function Header() {
   const [isMenu, setIsMenu] = useState(false);
   const handleTouchStart  = (event) => {
@@ -35,7 +34,7 @@ export default function Header() {
       <header className={`heading ${scrolled ? 'position-fixed' : ''}`}>
         <Container className='d-flex align-items-center justify-content-between'>
           <Link className="logo d-xl-none" href="/"  onClick={scrollToTop}>
-          <img src={logo2} alt='logo' />
+          <img src={logo} alt='logo' />
           </Link>
           <Link className="logo d-none d-xl-block" href="/"  onClick={scrollToTop}>
           <img src={logo} alt='logo' />
@@ -43,7 +42,7 @@ export default function Header() {
           <nav className={`heading-menu ${isMenu ?'show-menu':''}`}>
             <div className="title d-flex align-items-center justify-content-between d-xl-none">
               <Link className="logo" href="/"  onClick={scrollToTop}>
-               <img src={logo2} alt='logo' />
+               <img src={logo} alt='logo' />
               </Link>
               <button className="heading-toggler" onClick={() => setIsMenu(!isMenu)}>
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -17,7 +17,7 @@ export default function Toknomics() {
         </figure>
         <Container>
             <Row>
-                <Col lg={6} className='text-center'>
+                <Col md={6} className='text-center'>
                     <div className="toknomics-content left">
                         <figure className='tokenLeftImg'>
                             <img src={TokenLeftImg} alt="" />
@@ -38,7 +38,7 @@ export default function Toknomics() {
                     </div>
                 </Col>
                 <span className='vs_and'>and</span>
-                <Col lg={6} className='text-center'>
+                <Col md={6} className='text-center'>
                     <div className="toknomics-content right">
                         <figure className='tokenRightImg'>
                             <img src={tokenRightImg} alt="" />
