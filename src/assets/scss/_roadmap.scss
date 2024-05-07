@@ -23,8 +23,8 @@
         .roadmapShap img{
             position: absolute;
             top: 0;
-            left: -10%;
-            width: 120%;
+            left: -7.9%;
+            width: 100%;
             height: 100%;
             z-index: -1;
             @include sm{
@@ -33,17 +33,22 @@
         }
         &-left{
             max-width: 390px;
-            margin-left: 31%;
+            margin-left: 14.7%;
+            @include xl{
+                margin-left: 16.8%;
+            }
+            @include lg{
+                margin-left: 17.4%;
+            }
             @include sm{
                 margin-inline: auto;
                 max-width: 300px;
+                margin-left: 15%;
             }
         }
-        &-right{
+        &-two{
             max-width: 390px;
-            margin-left: 31%;
             @include sm{
-                margin-inline: auto;
                 max-width: 300px;
             }
             & .roadmap-single-item{
@@ -64,7 +69,10 @@
             margin-bottom: 60px;
             position: relative;
             z-index: 1;
-            @include sm{
+            @include lg{
+                margin-bottom: 30px;
+            }
+            @include mmd{
                 margin-bottom: 30px;
             }
             &::before{
@@ -107,12 +115,24 @@
                 font-weight: 700;
                 line-height: 140%;
                 margin-bottom: 10px;
+                @include lg{
+                    font-size: 24px;
+                }
+                @include mmd{
+                    font-size: 20px;
+                }
             }
             p{
                 color: rgba(255, 255, 255, 0.70);
                 @include font-18;
                 font-weight: 500;
                 line-height: 150%;
+                @include lg{
+                    font-size: 15px;
+                }
+                @include mmd{
+                    font-size: 15px;
+                }
             };
         }
     }
@@ -122,16 +142,20 @@
         }
     }
     
-
-.about-sinlge-item {
-    @include mmd{
-         padding: 0 10px;
-    }
-    @include ssm{
-        margin-left: 20px;
-    }
-    
-}
 }
 
+.roadmap-content-left.two {
+    max-width: 390px;
+    padding-left: 3.3%;
+    @include sm{
+        padding-left: 0;
+    }
+}
 
+.roadmap-content-left.three {
+    max-width: 390px;
+    padding-left: 6%;
+    @include sm{
+        padding-left: 0;
+    }
+}

@@ -25,8 +25,8 @@ export default function Roadmap() {
             <img src={roadMapShap} alt="" />
           </figure>
           <Row>
-            <Col lg={4}>
-              <div className="roadmap-content-left">
+            <Col md={4}>
+              <div className="roadmap-content-left one">
                 <div className="roadmap-single-item">
                   <h4>A New Era</h4>
                   <p>5,000 Sei Whales Splash Into The Sei Blockchain Seas.</p>
@@ -41,8 +41,8 @@ export default function Roadmap() {
                 </div>
               </div>
             </Col>
-            <Col lg={4}>
-              <div className="roadmap-content-left">
+            <Col md={4}>
+              <div className="roadmap-content-left two">
                   <div className="roadmap-single-item">
                     <h4>The Foes</h4>
                     <p>Launch of ‘Hunters’ NFTs – mercenaries that want to kill The Sei Whales and collect their blubber (BLUB).</p>
@@ -58,8 +58,8 @@ export default function Roadmap() {
               </div>
             </Col>
 
-            <Col lg={4}>
-              <div className="roadmap-content-left">
+            <Col md={4}>
+              <div className="roadmap-content-left three">
                   <div className="roadmap-single-item">
                     <h4>The Merch</h4>
                     <p>Marketplace With Members Exclusive Merchandise.</p>
