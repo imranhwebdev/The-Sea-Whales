@@ -29,7 +29,7 @@ export default function Toknomics() {
                             <p  data-aos="fade-up">Total Supply: <b>100 billion $WHALE</b></p>
                             <p data-aos="fade-up">Tax: <b>0/0</b></p>
                             <p  data-aos="fade-up">Secondary royalties collected from Sei Whale transactions used to periodically buy back and burn WHALE supply, pay staff, support builders and creators on SEI, marketing & other expenses</p>
-                            <p className='tokenNumber d-flex'  data-aos="fade-up">CA: <b>sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
+                            <p className='tokenNumber d-flex'  data-aos="fade-up"> <b>CA: sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
                             <div className="dual_btns" >
                                 <a href="#" className="boxed-btn" data-aos="fade-up">View Chart</a>
                                 <a href="#" className="boxed-btn transparent" data-aos="fade-up">Buy on Astroport</a>
@@ -50,7 +50,7 @@ export default function Toknomics() {
                             <p  data-aos="fade-up" data-aos-duration="1100">Total Supply: <b>100 billion Blub</b></p>
                             <p  data-aos="fade-up" data-aos-duration="1200">Tax: <b>0/0</b></p>
                             <p  data-aos="fade-up" data-aos-duration="1300">Secondary royalties collected from Sei Whale transactions used to periodically buy back and burn WHALE supply, pay staff, support builders and creators on SEI, marketing & other expenses</p>
-                            <p className='tokenNumber d-flex'  data-aos="fade-up" data-aos-duration="1400">CA: <b>sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
+                            <p className='tokenNumber d-flex'  data-aos="fade-up" data-aos-duration="1400"> <b>CA: sei1pyxztxv0fm4tdnfe4cdhm6fcalzz2zhszazq660t84sgqrnt5qqsf93m3l</b></p>
                             <div className="dual_btns"  data-aos="fade-up" data-aos-duration="1500">
                                 <a href="#" className="boxed-btn">View Chart</a>
                                 <a href="#" className="boxed-btn transparent">Buy on Astroport</a>

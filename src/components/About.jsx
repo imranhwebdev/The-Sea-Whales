@@ -87,7 +87,6 @@ export default function About() {
                                 pagination={{
                                     clickable: true,
                                 }}
-                                loop={true}
                                 navigation={true}
                                 modules={[Navigation]}
                                 className="mySwiper"
