@@ -293,7 +293,7 @@ const ShowcaseOne = () => {
     
   return (
     <div>
-      <div className="showcase showcaseOne ">
+      <div className="showcase showcaseOne " id="showcase">
           {marqueeImgs.map((item, index) => (
             <motion.div
             className="track"

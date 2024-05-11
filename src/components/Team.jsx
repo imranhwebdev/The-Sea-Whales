@@ -68,7 +68,7 @@ export default function Team() {
         },
     ];
   return (
-    <section className='team'>
+    <section className='team' id='team'>
         <figure className='teamBoubleShap'>
             <img src={teamBoubleShap} alt="" />
         </figure>

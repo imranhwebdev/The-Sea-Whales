@@ -4,7 +4,7 @@ import FooterLogo from '../assets/img/FooterLogo.png'
 export default function Footer(){
     const Footermenus = [
         {
-            menuLink: "#",
+            menuLink: "#banner",
             menuTxt: "Story",
         },
         {
@@ -46,7 +46,7 @@ export default function Footer(){
                 <Col lg={9} md={8}>
                     <ul className="footer-menu mt-2 mt-md-0">
                         {Footermenus.map((item,index)=>(
-                            <li key={index}><a target='_blank' href="#">{item.menuTxt}</a></li>
+                            <li key={index}><a href={item.menuLink}>{item.menuTxt}</a></li>
                         ))}
                     </ul>
                 </Col>

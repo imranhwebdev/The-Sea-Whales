@@ -36,7 +36,7 @@ export default function Banner(){
         },
     ]
     return(
-        <section className="banner">
+        <section className="banner" id='banner'>
             <figure className='herobg'>
                 <img src={herobg} alt="" />
             </figure>

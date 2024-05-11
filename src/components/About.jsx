@@ -65,7 +65,7 @@ export default function About() {
     ];
 
     return (
-        <section className="about">
+        <section className="about" id='about'>
             <Container>
                 <Row>
                     <Col lg={6}>

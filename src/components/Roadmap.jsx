@@ -5,7 +5,7 @@ import roadMapShap from "../assets/img/roadMapShap.png"
 import roadmapBubleShap from "../assets/img/roadmapboubleShap.png"
 export default function Roadmap() {
   return (
-    <section className='roadmap'>
+    <section className='roadmap' id='roadmap'>
         <figure className='roadmapBubleShap'>
             <img src={roadmapBubleShap} alt="" />
         </figure>
